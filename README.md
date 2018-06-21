@@ -124,8 +124,8 @@ The `iwyu_tool.py` script predates the native CMake support, and works off the [
 The script's command-line syntax is designed to mimic Clang's LibTooling, but they are otherwise unrelated. It can be used like this:
 
       mkdir build && cd build
-      CC="clang" CXX="clang++" cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ...
-      iwyu_tool.py -p .
+      CC="clang" CXX="clang++" cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+      iwyu_tool -p .
 
 or, on Windows systems:
 
